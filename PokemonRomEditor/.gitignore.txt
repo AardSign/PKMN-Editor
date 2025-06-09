@@ -1,0 +1,12 @@
+# Ignore as pastas de build e arquivos temporários do VS
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.Cache
+*.dbmdl
+*.log
+*.pdb
+*.vspscc
+*.vssscc
