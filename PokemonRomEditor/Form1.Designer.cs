@@ -28,12 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            btnOpenRom = new Button();
+            lblFile = new Label();
+            ofdOpenRom = new OpenFileDialog();
+            SuspendLayout();
+            // 
+            // btnOpenRom
+            // 
+            btnOpenRom.Location = new Point(0, 0);
+            btnOpenRom.Name = "btnOpenRom";
+            btnOpenRom.Size = new Size(75, 23);
+            btnOpenRom.TabIndex = 0;
+            btnOpenRom.Text = "Abrir ROM";
+            btnOpenRom.UseVisualStyleBackColor = true;
+            btnOpenRom.Click += button1_Click;
+            // 
+            // lblFile
+            // 
+            lblFile.AutoSize = true;
+            lblFile.Location = new Point(271, 140);
+            lblFile.Name = "lblFile";
+            lblFile.Size = new Size(163, 15);
+            lblFile.TabIndex = 1;
+            lblFile.Text = "Nenhum arquivo selecionado";
+            lblFile.Click += lblFile_Click;
+            // 
+            // ofdOpenRom
+            // 
+            ofdOpenRom.FileName = "ofdOpenRom";
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(lblFile);
+            Controls.Add(btnOpenRom);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Button btnOpenRom;
+        private Label lblFile;
+        private OpenFileDialog ofdOpenRom;
     }
 }
