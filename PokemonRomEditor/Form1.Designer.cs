@@ -39,7 +39,7 @@
             btnOpenRom.Name = "btnOpenRom";
             btnOpenRom.Size = new Size(75, 23);
             btnOpenRom.TabIndex = 0;
-            btnOpenRom.Text = "Abrir ROM";
+            btnOpenRom.Text = "Open ROM";
             btnOpenRom.UseVisualStyleBackColor = true;
             btnOpenRom.Click += button1_Click;
             // 
@@ -48,9 +48,9 @@
             lblFile.AutoSize = true;
             lblFile.Location = new Point(271, 140);
             lblFile.Name = "lblFile";
-            lblFile.Size = new Size(163, 15);
+            lblFile.Size = new Size(93, 15);
             lblFile.TabIndex = 1;
-            lblFile.Text = "Nenhum arquivo selecionado";
+            lblFile.Text = "No files selected";
             lblFile.Click += lblFile_Click;
             // 
             // ofdOpenRom
